@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 36px;
+            color: #1877f2;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #dddfe2;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form-group input:focus {
+            border-color: #1877f2;
+            outline: none;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background: #1877f2;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .login-button:hover {
+            background: #165dbb;
+        }
+
+        .forgot-password {
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            margin: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .divider:before,
+        .divider:after {
+            content: '';
+            height: 1px;
+            background: #dddfe2;
+            position: absolute;
+            top: 50%;
+            width: 40%;
+        }
+
+        .divider:before {
+            left: 0;
+        }
+
+        .divider:after {
+            right: 0;
+        }
+
+        .divider span {
+            background: white;
+            padding: 0 10px;
+            color: #606770;
+            font-size: 14px;
+        }
+
+        .create-account-button {
+            background: #42b72a;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .create-account-button:hover {
+            background: #36a420;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Facebook</div>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Email ou telefone" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Senha" required>
+            </div>
+            <button type="submit" class="login-button">Entrar</button>
+        </form>
+        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        <div class="divider"><span>ou</span></div>
+        <a href="#" class="create-account-button">Criar nova conta</a>
+    </div>
+</body>
+</html>
